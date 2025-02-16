@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkrevyos_docs_new=self.webpackChunkrevyos_docs_new||[]).push([[344],{7919:e=>{e.exports=JSON.parse('{"metadata":{"permalink":"/revyos-docs-new/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
