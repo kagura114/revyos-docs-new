@@ -39,7 +39,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://git.kagurach.uk/kagura/revyos-docs-temp', // FIXME
+            'https://github.com/kagura114/revyos-docs-new', // FIXME
         },
         theme: {
           customCss: './src/css/custom.css',
