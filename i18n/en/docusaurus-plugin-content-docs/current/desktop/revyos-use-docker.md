@@ -1,3 +1,8 @@
+---
+title: Docker
+sidebar_position: 1
+---
+
 # Installing riscv64 Docker
 
 The package for the riscv64 Docker installation is already available in the repository under the name `docker.io`. You can install it directly using:

@@ -1,3 +1,8 @@
+---
+title: GStreamer Pipeline Example
+sidebar_position: 2
+---
+
 
 # GStreamer pipeline examples with thead OpenMax-IL lib
 

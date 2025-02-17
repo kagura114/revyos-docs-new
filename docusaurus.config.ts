@@ -19,7 +19,7 @@ const config: Config = {
   organizationName: 'kagura114', // Usually your GitHub org/user name.
   projectName: 'revyos-docs-new', // Usually your repo name.
 
-  onBrokenLinks: 'warn', //FIXME: production 最好别用
+  onBrokenLinks: 'throw', //FIXME: production 最好别用
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internationalization, you can use this field to set
