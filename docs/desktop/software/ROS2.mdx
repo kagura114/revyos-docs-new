@@ -3,6 +3,10 @@ title: ROS2
 sidebar_position: 3
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+
 # Robot Operating System (ROS)
 > 本页的 ROS 指 ROS 2
 
@@ -29,15 +33,18 @@ sudo apt upgrade
 
 **注意**：两个版本可能会存在依赖冲突，请不要尝试同时安装两个版本
 
-Jazzy:
-```bash
-apt install ros-jazzy-desktop-full
-```
-
-Humble:
-```bash
-apt install ros-humble-desktop-full
-```
+<Tabs groupId="ros-version">
+  <TabItem value="jazzy" label="Jazzy">
+  ```bash
+  apt install ros-jazzy-desktop-full
+  ```
+  </TabItem>
+  <TabItem value="humble" label="Humble">
+  ```bash
+  apt install ros-humble-desktop-full
+  ```
+  </TabItem>
+</Tabs>
 
 ### 安装 rosdep
 ```bash
@@ -56,15 +63,18 @@ yaml https://raw.githubusercontent.com/revyos-ros/rosdistro/master/rosdep/ruby.y
 ### 获取 ROS 环境
 根据安装的 ROS 版本，选择相应的命令
 
-Jazzy:
-```bash
-source /opt/ros/jazzy/setup.sh
-```
-
-Humble:
-```bash
-source /opt/ros/humble/setup.sh
-```
+<Tabs groupId="ros-version">
+  <TabItem value="jazzy" label="Jazzy">
+  ```bash
+  source /opt/ros/jazzy/setup.sh
+  ```
+  </TabItem>
+  <TabItem value="humble" label="Humble">
+  ```bash
+  source /opt/ros/humble/setup.sh
+  ```
+  </TabItem>
+</Tabs>
 
 可以将上面的内容加入 `.bashrc` 或者您使用的 shell profile 中。
 
