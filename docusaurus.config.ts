@@ -64,7 +64,12 @@ const config: Config = {
           label: "文档",
         },
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: '/docs/issue',
+          label: '提交问题与已知问题',
+          position: 'left',
+        },
+        {
+          href: 'https://github.com/revyos/revyos',
           label: 'GitHub',
           position: 'right',
         },
@@ -78,7 +83,7 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Installation',
+          title: '镜像刷写',
           items: [
             {
               label: 'Installation Overview',
@@ -87,33 +92,12 @@ const config: Config = {
           ],
         },
         {
-          title: 'Community',
+          title: '社交媒体',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'X',
-              href: 'https://x.com/docusaurus',
-            },
-          ],
-        },
-        {
-          title: 'More',
-          items: [
-            {
-              label: 'Blog',
-              to: '/blog',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
-            },
+              label: 'Github',
+              href: 'https://github.com/revyos/revyos',
+            }
           ],
         },
       ],
