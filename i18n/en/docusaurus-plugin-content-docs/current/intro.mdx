@@ -2,6 +2,9 @@
 sidebar_position: 1
 ---
 
+
+import { DownloadLink } from "@site/src/components/ImageLinks";
+
 # RevyOS
 
 ## Introduction
@@ -20,18 +23,18 @@ Based on these customizations and optimizations, __RevyOS__ delivers excellent p
 
 The user version images of __RevyOS__ are currently updated on the [ISCAS (Institute of Software, Chinese Academy of Sciences)](https://mirror.iscas.ac.cn/revyos) / [Felix Finland Source](https://mirrors.felixc.at/revyos/) open-source mirror sites.
 
-If you want to obtain the latest version of __RevyOS__, please select the corresponding device to download the appropriate U-Boot, boot partition, and root partition files. After downloading, please visit [Installation](./Installation/install.md) for the installation guide for your device.
+If you want to obtain the latest version of __RevyOS__, please select the corresponding device to download the appropriate U-Boot, boot partition, and root partition files. After downloading, please visit [Installation](./Installation/intro) for the installation guide for your device.
 
 | Supported Devices | Image Download (Latest Version)  | SD Card Support |
 | ----------------- | -------------------------------------------------------------------------------- | --------- |
-| Lichee Pi 4A      | [20250123](https://mirror.iscas.ac.cn/revyos/extra/images/lpi4a/20250123/)       | Supported |
-| Milk-V Meles      | [20250123](https://mirror.iscas.ac.cn/revyos/extra/images/meles/20250123/)       | Supported |
-| Milk-V Pioneer    | [20241230](https://mirror.iscas.ac.cn/revyos/extra/images/sg2042/20241230/)      | Supported |
-| Lichee Cluster 4A | [20240720](https://mirror.iscas.ac.cn/revyos/extra/images/lpi4a/)                |           |
-| Lichee Console 4A | [20240720](https://mirror.iscas.ac.cn/revyos/extra/images/lcon4a/20240720/)      |           |
-| Lichee Book 4A    | [20240720](https://mirror.iscas.ac.cn/revyos/extra/images/laptop4a/)             |           |
-| Beagle-Ahead      | [20231210](https://mirror.iscas.ac.cn/revyos/extra/images/beagle/20231210/)      |           |
-| Huiwei book       | [20240617](https://mirror.iscas.ac.cn/revyos/extra/images/huiwei/test/20240617/) |           |
+| Lichee Pi 4A      | {<DownloadLink device="Lichee Pi 4A" />}      | Supported       |
+| Milk-V Meles      | {<DownloadLink device="Milk-V Meles" />}      | Supported       |
+| Milk-V Pioneer    | {<DownloadLink device="Milk-V Pioneer" />}    | Supported       |
+| Lichee Cluster 4A | {<DownloadLink device="Lichee Cluster 4A" />} |           |
+| Lichee Console 4A | {<DownloadLink device="Lichee Console 4A" />} |           |
+| Lichee Book 4A    | {<DownloadLink device="Lichee Book 4A" />}    |           |
+| Beagle-Ahead      | {<DownloadLink device="Beagle-Ahead" />}      |           |
+| Huiwei book       | {<DownloadLink device="Huiwei book" />}       |           |
 
 ### How to Enable T-Head Optimized GCC
 

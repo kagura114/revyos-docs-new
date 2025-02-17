@@ -7,7 +7,7 @@ interface ImageLink {
   sdCardSupport?: boolean;
 }
 
-export const imageLinks: ImageLink[] = [
+export const imageLinks = [
   {
     device: "Lichee Pi 4A",
     version: "20250123",
@@ -51,12 +51,18 @@ export const imageLinks: ImageLink[] = [
     version: "20240617",
     downloadLink: "https://mirror.iscas.ac.cn/revyos/extra/images/huiwei/test/20240617/",
   },
-];
+] as const satisfies readonly ImageLink[];
 
+/**
+ * 根据设备名称查找对应的下载链接，并渲染为 `<a>` 标签。
+ * 
+ * @param device 设备名称，仅允许 `DeviceName` 类型的值。
+ * @returns 如果找到匹配的设备，则返回对应版本的下载链接；否则显示 "$device 暂无镜像"。
+ */
 export const DownloadLink: React.FC<{device: string}> = ({ device }) => {
   const link = imageLinks.find((item) => item.device === device);
   
-  if (!link) return <span>暂无镜像</span>;
+  if (!link) return <span>${device} 暂无镜像</span>;
 
   return <a href={link.downloadLink}>{link.version}</a>;
 };

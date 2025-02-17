@@ -59,9 +59,9 @@ const config: Config = {
       items: [
         {
           type: 'docSidebar',
-          sidebarId: 'installationSidebar',
+          sidebarId: 'documentSidebar',
           position: 'left',
-          label: 'Installation',
+          label: "文档",
         },
         {
           href: 'https://github.com/facebook/docusaurus',
