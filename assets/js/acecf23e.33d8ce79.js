@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkrevyos_docs_new=self.webpackChunkrevyos_docs_new||[]).push([[903],{1912:s=>{s.exports=JSON.parse('{"blogBasePath":"/revyos-docs-new/blog","blogTitle":"Blog","authorsListPath":"/revyos-docs-new/blog/authors"}')}}]);
