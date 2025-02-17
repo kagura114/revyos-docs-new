@@ -69,7 +69,7 @@ const config: Config = {
           position: 'left',
         },
         {
-          href: 'https://github.com/revyos/revyos',
+          href: 'https://github.com/revyos',
           label: 'GitHub',
           position: 'right',
         },
@@ -86,9 +86,17 @@ const config: Config = {
           title: '镜像刷写',
           items: [
             {
-              label: 'Installation Overview',
+              label: '镜像刷写需知',
               to: '/docs/Installation/intro',
             },
+            {
+              label: 'Lichee Pi 4A',
+              to: '/docs/Installation/licheepi4a',
+            },
+            {
+              label: 'Milk-V Pioneer',
+              to: '/docs/Installation/milkv-pioneer',
+            }
           ],
         },
         {
@@ -97,6 +105,10 @@ const config: Config = {
             {
               label: 'Github',
               href: 'https://github.com/revyos/revyos',
+            },
+            {
+              label: 'Telegram',
+              href: 'https://t.me/+Pi6px22-OsUxM2M1',
             }
           ],
         },

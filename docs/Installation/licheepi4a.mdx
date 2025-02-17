@@ -36,7 +36,7 @@ import { DownloadLink } from "@site/src/components/ImageLinks";
 
 在处于图形界面时，在镜像站下载镜像时可以通过直接点击链接下载的方式进行下载。而如果想通过命令行进行下载，有许多种方式例如：wget、curl等，在这里我们选择 wget 作为下载工具。
 
-在[演示环境](#_2)中，wget通常会预装，可以通过在命令行查询 wget 版本的方式来查看是否已安装 wget。
+在[演示环境](#演示环境介绍)中，wget通常会预装，可以通过在命令行查询 wget 版本的方式来查看是否已安装 wget。
 
 ```bash
 wget --version
@@ -54,7 +54,7 @@ sudo apt install wget
 
 ### 文件解压工具
 
-在上述的[演示环境](#_2)中，zst文件压缩包有多种方式进行解压，例如zstd、tar、7z。此教程只列举其中一种。通过命令行使用 zstd 工具进行解压，此方式需要我们先在系统中安装 zstd 软件包，再进行解压。
+在上述的[演示环境](#演示环境介绍)中，zst文件压缩包有多种方式进行解压，例如zstd、tar、7z。此教程只列举其中一种。通过命令行使用 zstd 工具进行解压，此方式需要我们先在系统中安装 zstd 软件包，再进行解压。
 
 如果不知道系统中是否已经安装 ztsd，请执行下面的命令，此命令是通过查看 zstd 版本的命令，通过回显可以判断系统是否已经预装 ztsd 软件包。
 
@@ -81,7 +81,7 @@ sudo apt install zstd
 
 ## 启动方式介绍
 
-LicheePi4A 目前支持两种启动方式，分别是[从SD card 启动](#sd-card)和[从 eMMC 启动](#emmc)，对于两种不同的启动方式，此教程中都有进行说明，请根据自己所需的刷写方式点击进行跳转查看。
+LicheePi4A 目前支持两种启动方式，分别是[从SD card 启动](#从sd-card-启动)和[从 eMMC 启动](#从-emmc-启动)，对于两种不同的启动方式，此教程中都有进行说明，请根据自己所需的刷写方式点击进行跳转查看。
 
 请注意，不论使用哪种刷写方式，原有的用户数据都会丢失，所以在进行刷写前请一定确保做好数据备份的工作！
 
@@ -151,15 +151,15 @@ sudo unzstd sdcard-lpi4a-20250110_151339.img.zst
 
 准备MicroSD 读卡器和一张MicroSD 卡,目前 MicroSD 卡存在兼容性问题，RevyOS 提供了目前已测试过的 [MicroSD 卡列表](https://github.com/revyos/revyos/blob/main/Installation/card%20list.md)。
 
-如果您使用的 MicroSD 卡不在已知可用的列表上，出现无法正确刷写镜像和刷写后无法启动镜像的问题，请参考[此页](../issue)提交issue，并尝试参考[从 eMMC 启动](#emmc)镜像的刷写教程进行镜像刷写。
+如果您使用的 MicroSD 卡不在已知可用的列表上，出现无法正确刷写镜像和刷写后无法启动镜像的问题，请参考[此页](../issue)提交issue，并尝试参考[从 eMMC 启动](#从-emmc-启动)镜像的刷写教程进行镜像刷写。
 
 ### 烧录方式介绍
 
-如果您选择从SD card 启动，可以选择使用两种不同的方式将镜像烧录到 MicroSD 卡中。一种是通过[图形界面软件烧录](#balenaetcher-microsd)，一种是通过命令行使用dd命令[在命令行进行烧录](#dd)。
+如果您选择从SD card 启动，可以选择使用两种不同的方式将镜像烧录到 MicroSD 卡中。一种是通过[图形界面软件烧录](#使用balenaetcher写入镜像到-microsd-卡)，一种是通过命令行使用dd命令[在命令行进行烧录](#使用dd写入镜像)。
 
 #### 使用BalenaEtcher写入镜像到 MicroSD 卡
 
-从官网获取烧录工具 BalenaEtcher [https://etcher.balena.io/](https://etcher.balena.io/)，下载时请根据本机情况选择文件进行下载。根据[演示环境](#_2)中的说明，选择[Etcher for Linux x64 (64-bit) (zip)](https://github.com/balena-io/etcher/releases/download/v1.19.25/balenaEtcher-linux-x64-1.19.25.zip)进行下载并解压安装。
+从官网获取烧录工具 BalenaEtcher [https://etcher.balena.io/](https://etcher.balena.io/)，下载时请根据本机情况选择文件进行下载。根据[演示环境](#演示环境介绍)中的说明，选择[Etcher for Linux x64 (64-bit) (zip)](https://github.com/balena-io/etcher/releases/download/v1.19.25/balenaEtcher-linux-x64-1.19.25.zip)进行下载并解压安装。
 
 ![BE-version](/img/image-for-flash/BE-version.png)
 

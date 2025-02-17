@@ -3,6 +3,8 @@ sidebar_position: 2
 ---
 
 import { DownloadLink } from "@site/src/components/ImageLinks";
+import LocaleImage from "@site/src/components/LocaleImage";
+
 
 # Installing RevyOS on the LicheePi 4A
 
@@ -30,7 +32,7 @@ For unofficial environments that might be used, refer to [this page](../issue) f
 
 ## Boot Methods Overview
 
-LicheePi4A supports two boot methods: [SD Card Boot](#sd-card) and [eMMC Boot](#emmc). Follow the relevant section based on your needs.
+LicheePi4A supports two boot methods: [SD Card Boot](#sd-card-boot) and [eMMC Boot](#booting-from-emmc). Follow the relevant section based on your needs.
 
 ## SD Card Boot
 
@@ -70,7 +72,7 @@ If downloading via a web browser, click the link to start the download. Your bro
 
 If you prefer to download via the command line, tools like `wget` and `curl` can be used. In this guide, we use `wget` as the download tool.  
 
-In most [demonstration environments](#_2), `wget` is pre-installed. If `wget` is not installed, use the following command to install it:  
+In most [demonstration environments](#demonstration-environment), `wget` is pre-installed. If `wget` is not installed, use the following command to install it:  
 
 ```bash
 sudo apt install wget
@@ -90,7 +92,7 @@ wget https://mirror.iscas.ac.cn/revyos/extra/images/lpi4a/20250110/sdcard-lpi4a-
 
 After downloading, you will obtain a file named [sdcard-lpi4a-20250110_151339.img.zst](https://mirror.iscas.ac.cn/revyos/extra/images/lpi4a/20250110/sdcard-lpi4a-20250110_151339.img.zst). This is not the final image file but a compressed archive. You need to extract the compressed file `sdcard-lpi4a-20250110_151339.img.zst` to obtain the final image file `sdcard-lpi4a-20250110_151339.img`.  
 
-In the [demonstration environment](#_2) mentioned earlier, `.zst` files can be extracted using various tools such as `zstd`, `tar`, or `7z`. This guide demonstrates one method using the `zstd` tool via the command line. First, you need to install the `zstd` package on your system before extracting the file.  
+In the [demonstration environment](#Demonstratio- Environment) mentioned earlier, `.zst` files can be extracted using various tools such as `zstd`, `tar`, or `7z`. This guide demonstrates one method using the `zstd` tool via the command line. First, you need to install the `zstd` package on your system before extracting the file.  
 
 If you are unsure whether `zstd` is already installed on your system, execute the following command to check the version of `zstd`. If a version is displayed, it indicates that `zstd` is installed.  
 
@@ -128,15 +130,15 @@ Once the extraction is complete, you will have the file `sdcard-lpi4a-20250110_1
 
 Prepare a MicroSD card reader and a MicroSD card. Note that there are compatibility issues with MicroSD cards. RevyOS provides a list of [tested MicroSD cards](https://github.com/revyos/revyos/blob/main/Installation/card%20list.md).  
 
-If your MicroSD card is not on the list of known compatible cards and you encounter issues such as failure to write the image or failure to boot after writing, refer to [this page](../issue) to submit an issue. You can also try the [eMMC boot guide](#emmc) for writing the image.  
+If your MicroSD card is not on the list of known compatible cards and you encounter issues such as failure to write the image or failure to boot after writing, refer to [this page](../issue) to submit an issue. You can also try the [eMMC boot guide](#booting-from-emmc) for writing the image.  
 
 ### Image Writing Methods  
 
-If you choose to boot from an SD card, there are two methods to write the image to the MicroSD card:[Using a graphical interface tool](#balenaetcher-microsd) like BalenaEtcher, or [Using the `dd` command in the command line](#dd).  
+If you choose to boot from an SD card, there are two methods to write the image to the MicroSD card:[Using a graphical interface tool](#writing-the-image-with-balenaetcher) like BalenaEtcher, or [Using the `dd` command in the command line](#writing-the-image-with-dd).  
 
 #### Writing the Image with BalenaEtcher  
 
-Download the BalenaEtcher tool from its official website: [https://etcher.balena.io/](https://etcher.balena.io/). Select the appropriate file for your system. For the [demonstration environment](#_2), download and extract [Etcher for Linux x64 (64-bit) (zip)](https://github.com/balena-io/etcher/releases/download/v1.19.25/balenaEtcher-linux-x64-1.19.25.zip).  
+Download the BalenaEtcher tool from its official website: [https://etcher.balena.io/](https://etcher.balena.io/). Select the appropriate file for your system. For the [demonstration environment](#Demonstratio- Environment), download and extract [Etcher for Linux x64 (64-bit) (zip)](https://github.com/balena-io/etcher/releases/download/v1.19.25/balenaEtcher-linux-x64-1.19.25.zip).  
 
 ![BE-version](/img/image-for-flash/BE-version.png)  
 
@@ -144,13 +146,13 @@ Insert the SD card into the card reader and connect it to your computer.
 
 Run BalenaEtcher to write the image to the SD card.  
 In the BalenaEtcher window, click **"Flash from file"** to select the image file.  
-![](/img/image-for-flash/BE1.png)  
+{<LocaleImage src="/img/image-for-flash/BE1.png" />}
 After selecting the image file, choose the target device in the second field.  
-![](/img/image-for-flash/BE2.png)  
+{<LocaleImage src="/img/image-for-flash/BE2.png" />}
 Once both options are selected, click **"Flash"** to write the image.  
-![](/img/image-for-flash/BE3.png)  
+{<LocaleImage src="/img/image-for-flash/BE3.png" />}
 After some time, a message will indicate that the writing process is complete.  
-![](/img/image-for-flash/BE4.png)  
+{<LocaleImage src="/img/image-for-flash/BE4.png" />}
 
 #### Writing the Image with `dd`  
 
