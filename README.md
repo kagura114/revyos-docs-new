@@ -11,6 +11,8 @@ __RevyOS__ 围绕玄铁C906、C910、C920、C908等芯片提供了完整而全�
 
 This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
 
+## 更新镜像链接
+修改此文件内容 [src/components/ImageLinks.tsx](src/components/ImageLinks.tsx)
 
 ## exported functions 
 `src/components/ImageLinks.tsx` 中包含所有适用的镜像最新版本和下载链接，引用最新版链接请使用 `mdx` 并使用相关函数（见： [此处用法](docs/intro.mdx)）
