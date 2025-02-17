@@ -9,15 +9,15 @@ const config: Config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://kagrua114.github.io', // FIXME
+  url: 'https://docs.revyos.dev/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/revyos-docs-new',
+  baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'kagura114', // Usually your GitHub org/user name.
-  projectName: 'revyos-docs-new', // Usually your repo name.
+  organizationName: 'revyos', // Usually your GitHub org/user name.
+  projectName: 'docs', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -34,7 +34,7 @@ const config: Config = {
         docs: {
           sidebarPath: './sidebars.ts',
           editUrl:
-            'https://github.com/kagura114/revyos-docs-new/tree/main', // FIXME
+            'https://github.com/revyos/docs/tree/main',
         },
         theme: {
           customCss: './src/css/custom.css',
